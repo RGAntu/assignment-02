@@ -37,6 +37,7 @@
   
   .max-width{
     width: 1160px;
+    margin: 0 auto;
   }
   .primary-btn{
     width: 197px;
@@ -58,13 +59,14 @@
   /* nav  */
 
   nav{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   .nav-logo{
     align-items: center;
-    width: 62px;
+    margin-left: 20px;
+    /* width: 62px; */
   }
 
   .nav-logo-text{
@@ -93,11 +95,40 @@
     width: 50px;
   }
 
+/* banner */
+.banner{
+  align-items: center;
+  justify-content: center;
+}
+.banner-content{
+  width: 640px;
+  height: 330px;
+}
+
+.banner-content-title{
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.banner-content-description{
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.banner-btn > .primary-btn{
+  background-color: rgba(17, 17, 17, 1);;
+}
+
+
+
   @media screen and (max-width: 576px) {
     nav{
-        padding: 0 20px 30px 20px;
+        /* padding: 0 20px 30px 20px; */
         border-bottom: 1px solid #FEA301;
         justify-content: space-between;
+    }
+    .nav-logo{
+      margin-left: 250px;
     }
     .nav-logo-text{
         display: none;
@@ -110,10 +141,12 @@
     }
     .menu-bar{
         display: block;
+        margin-right: 250px;
     }
   }
 
   @media screen and (min-width:576px) and (max-width: 992px) {
+    
     .nav-links{
         margin-left: 90px;
     }
@@ -124,3 +157,16 @@
             display: none;     
      }
   }
+
+  /* banner  */
+
+  @media screen and (max-width:576px) {
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner-content{
+      text-align: center;
+    }
+  }
+
+  
