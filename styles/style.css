@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* Shared Styles */
+  .white{
+    color: rgba(247, 247, 247, 1);
+  }
+  .black{
+    color: rgba(17, 17, 17, 1);
+  }
+  .orange{
+    color: rgba(254, 163, 1, 1);
+  }
+  .sky-blue{
+    color: rgba(1, 172, 253, 1);
+  }
+  .grey{
+    color: rgba(128, 128, 128, 1);
+  }
+  .blue{
+    color: rgba(5, 212, 223, 1);
+  }
+  .dark-blue{
+    color: rgba(93, 88, 239, 1);
+  }
+  .display-flex{
+    display: flex;
+  }
+  
+  .max-width{
+    width: 1160px;
+  }
+  .primary-btn{
+    width: 197px;
+    height: 50px;
+    background-color: #FEA301;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+  }
+
+
+
+  /* Header  */
+
+
+  /* nav  */
+
+  nav{
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-logo{
+    align-items: center;
+    width: 62px;
+  }
+
+  .nav-logo-text{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+
+  .nav-links ul{
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 30px;
+    text-decoration: none;
+
+  }
+
+  .menu-bar{
+    display: none;
+  }
+  .menu-bar img{
+    width: 50px;
+  }
+
+  @media screen and (max-width: 576px) {
+    nav{
+        padding: 0 20px 30px 20px;
+        border-bottom: 1px solid #FEA301;
+        justify-content: space-between;
+    }
+    .nav-logo-text{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+  }
+
+  @media screen and (min-width:576px) and (max-width: 992px) {
+    .nav-links{
+        margin-left: 90px;
+    }
+    .nav-links ul{
+        padding: 0 10px;
+        }
+        .nav-logo-text{
+            display: none;     
+     }
+  }
