@@ -33,10 +33,10 @@
   display: flex;
 }
 
-.max-width {
+/* .max-width {
   width: 1260px;
   margin: 0 auto;
-}
+} */
 .primary-btn {
   width: 197px;
   height: 50px;
@@ -204,7 +204,7 @@ marquee{
 background-size: cover, cover;
 background-position: center, right bottom;
 background-repeat: no-repeat, no-repeat;
-margin: 100px 0 0 0;
+margin: 100px 0 0;
 
 }
 .our-stories-title{
@@ -445,4 +445,20 @@ margin: 0 auto;
   .nav-logo-text {
     display: none;
   }
+  .banner{
+    flex-direction: column-reverse;
+  }
+  .banner-content{
+    text-align: center;
+  }
+  .our-stories-container{
+    flex-direction: column;
+  }
+  .stories-right-boxes {
+    margin: 0;
+  }
+  .curriculum-container{ 
+    flex-direction: column;
+    margin-left: 150px;
+}
 }
