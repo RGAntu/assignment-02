@@ -89,6 +89,13 @@ nav {
   width: 50px;
 }
 
+/* marquee  */
+marquee{
+  border: 1px solid rgba(0, 0, 0, .15);
+  padding: 10px;
+  font-size: 1rem;
+}
+
 /* banner */
 .banner {
   align-items: center;
